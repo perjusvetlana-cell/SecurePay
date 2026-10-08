@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecurePay</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+
+        <div>
+
+            <h1>🛡️ SecurePay</h1>
+
+            <p>Protecție inteligentă împotriva fraudelor</p>
+
+        </div>
+
+        <span class="online">
+
+            ● PROTECȚIE ACTIVĂ
+
+        </span>
+
+    </header>
+
+    <main>
+
+        <!-- SOLD -->
+
+        <section class="balance">
+
+            <p>Sold disponibil</p>
+
+            <h2 id="balance">
+
+                25 480,00 MDL
+
+            </h2>
+
+            <span>
+
+                Cont protejat ✓
+
+            </span>
+
+        </section>
+
+        <!-- VERIFICAREA TRANZACȚIEI -->
+
+        <section class="card">
+
+            <h2>🔎 Verificare tranzacție</h2>
+
+            <label for="recipient">Destinatar</label>
+
+            <input
+
+                id="recipient"
+
+                name="recipient"
+
+                value="Online Store"
+
+            >
+
+            <label for="amount">Suma (MDL)</label>
+
+            <input
+
+                id="amount"
+
+                name="amount"
+
+                type="number"
+
+                value="8500"
+
+            >
+
+            <label for="location">Locația tranzacției</label>
+
+            <input
+
+                id="location"
+
+                name="location"
+
+                value="Chișinău"
+
+            >
+
+            <button type="button" onclick="checkTransaction()">
+
+                Verifică tranzacția
+
+            </button>
+
+            <div id="transactionResult" aria-live="polite"></div>
+
+        </section>
+
+        <!-- RECUNOAȘTERE VOCALĂ -->
+
+        <section class="card">
+
+            <h2>🎙️ Mesaj vocal</h2>
+
+            <p>
+
+                Apasă butonul pentru a înregistra un mesaj vocal. Funcționează doar dacă browserul are acces la microfon.
+
+            </p>
+
+            <div class="phrase">
+
+                „Confirm tranzacția SecurePay.”
+
+            </div>
+
+            <button
+
+                id="voiceButton"
+
+                type="button"
+
+                class="voice"
+
+                onclick="startVoice()"
+
+            >
+
+                🎤 Înregistrează mesaj vocal
+
+            </button>
+
+            <audio id="voicePlayback" controls hidden></audio>
+
+            <p id="voiceResult" aria-live="polite">
+
+                Aștept înregistrarea...
+
+            </p>
+
+        </section>
+
+        <!-- TRANZACȚII RECENTE -->
+
+        <section class="card">
+
+            <h2>📋 Tranzacții recente</h2>
+
+            <div class="transaction">
+
+                <span>
+
+                    ☕ Coffee Shop
+
+                </span>
+
+                <strong>
+
+                    -75 MDL
+
+                </strong>
+
+            </div>
+
+            <div class="transaction">
+
+                <span>
+
+                    🛒 Supermarket
+
+                </span>
+
+                <strong>
+
+                    -420 MDL
+
+                </strong>
+
+            </div>
+
+            <div class="transaction suspicious">
+
+                <span>
+
+                    ⚠️ Online Store
+
+                </span>
+
+                <strong>
+
+                    -8 500 MDL
+
+                </strong>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        SecurePay este un prototip demonstrativ.
+
+        Nu procesează tranzacții bancare reale.
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

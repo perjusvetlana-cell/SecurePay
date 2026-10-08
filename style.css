@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #eef3f8;
+
+    color: #17202a;
+
+}
+
+.app {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 25px;
+
+}
+
+/* HEADER */
+
+header {
+
+    background: #123c5a;
+
+    color: white;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+header h1 {
+
+    margin: 0;
+
+}
+
+header p {
+
+    margin-bottom: 0;
+
+    opacity: 0.8;
+
+}
+
+.online {
+
+    background: #1e8449;
+
+    padding: 9px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+/* SOLD */
+
+.balance {
+
+    margin-top: 20px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+
+}
+
+.balance p {
+
+    color: #667;
+
+    margin: 0;
+
+}
+
+.balance h2 {
+
+    font-size: 34px;
+
+    margin: 10px 0;
+
+    color: #123c5a;
+
+}
+
+.balance span {
+
+    color: #1e8449;
+
+    font-weight: bold;
+
+}
+
+/* CARDURI */
+
+.card {
+
+    background: white;
+
+    margin-top: 20px;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+
+}
+
+.card h2 {
+
+    color: #123c5a;
+
+}
+
+/* INPUTURI */
+
+label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+}
+
+input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 7px;
+
+    border: 1px solid #ccd3da;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+}
+
+/* BUTOANE */
+
+button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #123c5a;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background: #1b587f;
+
+}
+
+.voice {
+
+    background: #6c3483;
+
+}
+
+/* REZULTAT TRANZACȚIE */
+
+#transactionResult,
+
+#voiceResult {
+
+    margin-top: 18px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+}
+
+.safe {
+
+    background: #d5f5e3;
+
+    color: #196f3d;
+
+}
+
+.danger {
+
+    background: #fadbd8;
+
+    color: #922b21;
+
+}
+
+/* FRAZA VOCALĂ */
+
+.phrase {
+
+    padding: 15px;
+
+    background: #f4f6f7;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-style: italic;
+
+}
+
+/* TRANZACȚII */
+
+.transaction {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 15px 5px;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+.transaction.suspicious {
+
+    color: #922b21;
+
+    background: #fff5f5;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+}
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    margin: 25px 0;
+
+    color: #777;
+
+    font-size: 13px;
+
+}
